@@ -17,7 +17,7 @@ with open ('Timeline_of_ programming_languages.txt', 'r', encoding="utf-8") as f
 for nyelv in nyelvek:
     print(nyelv)
 
-with open('kimenet.txt', 'w', encoding='utf-8') as celfajl:
-        print('Ez kerül a fájlba...', file=celfajl)  
-        for adatok in celfajl:
-            print(adatok.strip(), file=celfajl)
+with open('kimenet.txt', 'w', encoding='utf-8') as celfajl: 
+        for nyelv in nyelvek:
+            print(f'{nyelv[0]}, {nyelv[1]}', file=celfajl)
+            

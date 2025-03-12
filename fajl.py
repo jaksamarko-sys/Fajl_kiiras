@@ -19,6 +19,5 @@ for nyelv in nyelvek:
 
 with open('kimenet.txt', 'w', encoding='utf-8') as celfajl:
         print('Ez kerül a fájlba...', file=celfajl)  
-        for sor in forrasfajl:
-            print(sor.strip(), file=celfajl)
-  
+        for adatok in celfajl:
+            print(adatok.strip(), file=celfajl)
